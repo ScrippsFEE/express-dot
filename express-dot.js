@@ -55,6 +55,8 @@ function _renderWithLayout(filename, layoutTemplate, options, cb) {
   });
 }
 
+exports.__doT = doT;
+
 exports.setGlobals = function(globals) {
   'use strict';
   for(var f in _globals){
